@@ -1,0 +1,25 @@
+cislo1 = int(input("zadaj cislo:"))
+vysledne = 0
+while cislo1 !=0:
+    t = cislo1 % 10
+    cislo1//=10
+    vysledne*=10
+    vysledne+=t
+cislo = vysledne
+cislo2 = vysledne
+parne = 0
+neparne = 0
+print ("parne cisla su:",end='')
+while cislo !=0:
+    o = cislo % 10
+    cislo//=10
+    neparne = o
+    print(neparne,end='')
+    cislo//=10
+print ("")
+print ("neparne cisla su:",end='')
+while cislo2 !=0:
+    o = cislo2 % 100
+    cislo2//=100
+    parne = o//10
+    print(parne,end='')
